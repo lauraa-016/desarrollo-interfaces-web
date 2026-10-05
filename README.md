@@ -8,7 +8,7 @@ Repositorio destinado a recopilar las prácticas, ejercicios y proyectos realiza
 
 <br>
 
-<img src="https://skillicons.dev/icons?i=html,css,bootstrap,figma,github,vscode" alt="Tecnologías">
+<img src="https://skillicons.dev/icons?i=html,css,bootstrap,github,vscode" alt="Tecnologías">
 
 <br><br>
 
