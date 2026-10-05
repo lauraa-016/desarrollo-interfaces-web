@@ -12,9 +12,9 @@ Repositorio dedicado a recopilar los ejercicios, prácticas y proyectos realizad
 
 <br><br>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/USUARIO/desarrollo-web-entorno-cliente?style=for-the-badge&color=6366f1)
-![GitHub last commit](https://img.shields.io/github/last-commit/USUARIO/desarrollo-web-entorno-cliente?style=for-the-badge&color=8b5cf6)
-![GitHub language count](https://img.shields.io/github/languages/count/USUARIO/desarrollo-web-entorno-cliente?style=for-the-badge&color=3b82f6)
+![GitHub repo size](https://img.shields.io/github/repo-size/lauraa-016/desarrollo-web-entorno-cliente?style=for-the-badge&color=6366f1)
+![GitHub last commit](https://img.shields.io/github/last-commit/lauraa-016/desarrollo-web-entorno-cliente?style=for-the-badge&color=8b5cf6)
+![GitHub language count](https://img.shields.io/github/languages/count/lauraa-016/desarrollo-web-entorno-cliente?style=for-the-badge&color=3b82f6)
 
 </div>
 
