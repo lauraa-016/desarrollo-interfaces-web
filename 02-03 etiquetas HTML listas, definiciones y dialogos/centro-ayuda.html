@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ejercicio 8 - Centro de ayuda</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        dialog {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 350px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Laura de la Mata</h1>
+
+    <h1>8. Centro de ayuda</h1>
+
+    <button onclick="centroAyuda.showModal()">
+        Abrir centro de ayuda
+    </button>
+
+
+    <dialog id="centroAyuda">
+
+        <h2>Centro de ayuda</h2>
+
+        <details>
+
+            <summary>¿Qué es HTML?</summary>
+
+            <p>
+                HTML es el lenguaje utilizado para crear
+                la estructura de las páginas web.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>¿Qué es CSS?</summary>
+
+            <p>
+                CSS es el lenguaje utilizado para definir
+                el diseño y la apariencia de una página web.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>¿Qué es JavaScript?</summary>
+
+            <p>
+                JavaScript es un lenguaje que permite añadir
+                comportamiento e interactividad a las páginas web.
+            </p>
+
+        </details>
+
+
+        <details>
+
+            <summary>¿Cómo puedo cerrar esta ventana?</summary>
+
+            <p>
+                Puedes cerrar el centro de ayuda pulsando
+                el botón de cerrar.
+            </p>
+
+        </details>
+
+
+        <button onclick="centroAyuda.close()">
+            Cerrar
+        </button>
+
+    </dialog>
+
+
+</body>
+
+</html>

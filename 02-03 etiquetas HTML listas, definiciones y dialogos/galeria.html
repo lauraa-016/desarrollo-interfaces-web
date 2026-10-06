@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ejercicio 9 - Galería</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .galeria img {
+            width: 120px;
+            height: 80px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            object-fit: cover;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.1);
+        }
+
+        dialog {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        dialog img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .cerrar {
+            margin-top: 15px;
+            border: none;
+            background-color: #d9534f;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .cerrar:hover {
+            background-color: #c9302c;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Laura de la Mata</h1>
+
+    <h1>9. Galería de imágenes</h1>
+
+    <div class="galeria">
+
+        <!-- Imagen 1 -->
+        <img src="imagenes/imagen1.jpg"
+             alt="Programador escribiendo código"
+             onclick="imagen1.showModal()">
+
+        <!-- Imagen 2 -->
+        <img src="imagenes/imagen2.jpg"
+             alt="Programador trabajando con varios monitores"
+             onclick="imagen2.showModal()">
+
+        <!-- Imagen 3 -->
+        <img src="imagenes/imagen3.jpg"
+             alt="Código fuente en pantalla"
+             onclick="imagen3.showModal()">
+
+        <!-- Imagen 4 -->
+        <img src="imagenes/imagen4.jpg"
+             alt="Servidores en un centro de datos"
+             onclick="imagen4.showModal()">
+
+        <!-- Imagen 5 -->
+        <img src="imagenes/imagen5.jpg"
+             alt="Smartphone y tecnología"
+             onclick="imagen5.showModal()">
+
+    </div>
+
+
+    <!-- VENTANA IMAGEN 1 -->
+    <dialog id="imagen1">
+
+        <h2>Programador escribiendo código</h2>
+
+        <img src="imagenes/imagen1.jpg"
+             alt="Programador escribiendo código">
+
+        <details>
+
+            <summary>Ver descripción</summary>
+
+            <p>
+                Imagen de una persona programando utilizando un ordenador
+                portátil y un monitor.
+            </p>
+
+        </details>
+
+        <button class="cerrar" onclick="imagen1.close()">
+            Cerrar
+        </button>
+
+    </dialog>
+
+
+    <!-- VENTANA IMAGEN 2 -->
+    <dialog id="imagen2">
+
+        <h2>Programador trabajando con varios monitores</h2>
+
+        <img src="imagenes/imagen2.jpg"
+             alt="Programador trabajando con varios monitores">
+
+        <details>
+
+            <summary>Ver descripción</summary>
+
+            <p>
+                Imagen de un espacio de trabajo tecnológico con varios
+                monitores utilizados para programar y desarrollar software.
+            </p>
+
+        </details>
+
+        <button class="cerrar" onclick="imagen2.close()">
+            Cerrar
+        </button>
+
+    </dialog>
+
+
+    <!-- VENTANA IMAGEN 3 -->
+    <dialog id="imagen3">
+
+        <h2>Código fuente en pantalla</h2>
+
+        <img src="imagenes/imagen3.jpg"
+             alt="Código fuente en pantalla">
+
+        <details>
+
+            <summary>Ver descripción</summary>
+
+            <p>
+                Imagen de código fuente mostrado en la pantalla de un
+                ordenador durante el proceso de programación.
+            </p>
+
+        </details>
+
+        <button class="cerrar" onclick="imagen3.close()">
+            Cerrar
+        </button>
+
+    </dialog>
+
+
+    <!-- VENTANA IMAGEN 4 -->
+    <dialog id="imagen4">
+
+        <h2>Servidores en un centro de datos</h2>
+
+        <img src="imagenes/imagen4.jpg"
+             alt="Servidores en un centro de datos">
+
+        <details>
+
+            <summary>Ver descripción</summary>
+
+            <p>
+                Imagen de un centro de datos con diferentes servidores
+                utilizados para almacenar y procesar información.
+            </p>
+
+        </details>
+
+        <button class="cerrar" onclick="imagen4.close()">
+            Cerrar
+        </button>
+
+    </dialog>
+
+
+    <!-- VENTANA IMAGEN 5 -->
+    <dialog id="imagen5">
+
+        <h2>Smartphone y tecnología</h2>
+
+        <img src="imagenes/imagen5.jpg"
+             alt="Smartphone y tecnología">
+
+        <details>
+
+            <summary>Ver descripción</summary>
+
+            <p>
+                Imagen de un teléfono inteligente, uno de los dispositivos
+                tecnológicos más utilizados actualmente.
+            </p>
+
+        </details>
+
+        <button class="cerrar" onclick="imagen5.close()">
+            Cerrar
+        </button>
+
+    </dialog>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Dialog</title>
+</head>
+
+<body>
+
+    <h1>Laura de la Mata</h1>
+
+    <h1>7. Preguntas modales con dialog</h1>
+
+
+    <button onclick="pregunta1.showModal()">
+        Pregunta 1
+    </button>
+
+    <dialog id="pregunta1">
+
+        <h2>Pregunta 1</h2>
+
+        <p>
+            ¿Qué lenguaje se utiliza para crear la estructura
+            de una página web?
+        </p>
+
+        <button onclick="pregunta1.close()">
+            Cerrar
+        </button>
+
+    </dialog>
+
+
+    <br><br>
+
+
+    <button onclick="pregunta2.showModal()">
+        Pregunta 2
+    </button>
+
+    <dialog id="pregunta2">
+
+        <h2>Pregunta 2</h2>
+
+        <p>
+            ¿Qué etiqueta HTML se utiliza para crear una lista
+            desordenada?
+        </p>
+
+        <button onclick="pregunta2.close()">
+            Cerrar
+        </button>
+
+    </dialog>
+
+
+    <br><br>
+
+
+    <button onclick="pregunta3.showModal()">
+        Pregunta 3
+    </button>
+
+    <dialog id="pregunta3">
+
+        <h2>Pregunta 3</h2>
+
+        <p>
+            ¿Qué etiqueta HTML se utiliza para crear una lista
+            ordenada?
+        </p>
+
+        <button onclick="pregunta3.close()">
+            Cerrar
+        </button>
+
+    </dialog>
+
+
+</body>
+
+</html>
