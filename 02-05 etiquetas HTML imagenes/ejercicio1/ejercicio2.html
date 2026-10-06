@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - WebP y AVIF</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio 2 - Optimización de imágenes</h1>
+
+    <h2>Imagen en formato WebP</h2>
+
+    <img
+        src="imagenes/paisaje1.webp"
+        alt="Paisaje en formato WebP"
+        width="800"
+        height="600"
+    >
+
+
+    <h2>Imagen en formato AVIF</h2>
+
+    <img
+        src="imagenes/paisaje1.avif"
+        alt="Paisaje en formato AVIF"
+        width="800"
+        height="600"
+    >
+
+
+    <h2>Uso de la etiqueta picture</h2>
+
+    <p>
+        El navegador intentará utilizar primero AVIF.
+        Si no es compatible, utilizará WebP.
+        Si tampoco es compatible, utilizará JPEG.
+    </p>
+
+    <picture>
+
+        <source
+            srcset="imagenes/paisaje1.avif"
+            type="image/avif"
+        >
+
+        <source
+            srcset="imagenes/paisaje1.webp"
+            type="image/webp"
+        >
+
+        <img
+            src="imagenes/paisaje1.jpg"
+            alt="Paisaje de montaña"
+            width="800"
+            height="600"
+        >
+
+    </picture>
+
+</body>
+
+</html>
