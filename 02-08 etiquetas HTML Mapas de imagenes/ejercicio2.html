@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa de imágenes</title>
+</head>
+
+<body>
+
+    <h1>Mapa de imágenes con cuatro círculos</h1>
+
+    <img src="./assets/ejercicio2.png" alt="Panel con cuatro botones de colores" usemap="#botones" width="429"
+        height="259">
+
+    <map name="botones">
+        <area shape="circle" coords="118,86,22" href="#rojo" onclick="alert('Has pulsado el botón ROJO');"
+            alt="Botón rojo">
+
+        <area shape="circle" coords="187,86,22" href="#azul" onclick="alert('Has pulsado el botón AZUL');"
+            alt="Botón azul">
+
+        <area shape="circle" coords="257,86,22" href="#verde" onclick="alert('Has pulsado el botón VERDE');"
+            alt="Botón verde">
+
+        <area shape="circle" coords="326,86,22" href="#amarillo" onclick="alert('Has pulsado el botón AMARILLO');"
+            alt="Botón amarillo">
+    </map>
+
+</body>
+
+</html>

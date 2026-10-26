@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Mapa interactivo de Europa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        img {
+            display: block;
+            width: 570px;
+            height: 425px;
+            max-width: 100%;
+        }
+
+        p {
+            max-width: 720px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mapa interactivo de Europa</h1>
+    <p>Pulsa sobre las zonas del mapa para comprobar el país. Las áreas son aproximadas para esta imagen esquemática de
+        570 × 425 píxeles.</p>
+    <img src="./assets/ejercicio4.png" width="570" height="425" alt="Mapa político de Europa" usemap="#europa">
+    <map name="europa">
+        <area shape="poly" coords="90,20,123,20,145,37,145,58,126,70,99,61,88,42" href="#"
+            onclick="alert('Has pulsado: Islandia'); return false;" alt="Islandia" title="Islandia">
+        <area shape="poly" coords="105,178,119,173,132,180,137,192,128,204,113,199" href="#"
+            onclick="alert('Has pulsado: Irlanda'); return false;" alt="Irlanda" title="Irlanda">
+        <area shape="poly" coords="143,144,160,140,177,149,183,166,176,183,166,199,151,194,143,179,148,163" href="#"
+            onclick="alert('Has pulsado: Reino Unido'); return false;" alt="Reino Unido" title="Reino Unido">
+        <area shape="poly" coords="50,307,65,300,72,318,66,342,51,359,42,345" href="#"
+            onclick="alert('Has pulsado: Portugal'); return false;" alt="Portugal" title="Portugal">
+        <area shape="poly" coords="72,302,96,295,120,302,143,315,159,334,146,356,125,374,101,378,79,363,67,341" href="#"
+            onclick="alert('Has pulsado: España'); return false;" alt="España" title="España">
+        <area shape="poly" coords="140,235,161,224,186,226,203,239,209,260,198,282,182,300,160,304,143,288,134,267"
+            href="#" onclick="alert('Has pulsado: Francia'); return false;" alt="Francia" title="Francia">
+        <area shape="poly" coords="187,213,198,209,206,218,202,228,192,230,185,222" href="#"
+            onclick="alert('Has pulsado: Bélgica'); return false;" alt="Bélgica" title="Bélgica">
+        <area shape="poly" coords="179,198,190,194,198,202,194,212,184,213,177,206" href="#"
+            onclick="alert('Has pulsado: Países Bajos'); return false;" alt="Países Bajos" title="Países Bajos">
+        <area shape="poly" coords="202,183,225,174,243,183,251,203,245,222,230,235,210,227,202,211" href="#"
+            onclick="alert('Has pulsado: Alemania'); return false;" alt="Alemania" title="Alemania">
+        <area shape="poly" coords="190,166,201,164,208,173,204,184,195,183" href="#"
+            onclick="alert('Has pulsado: Dinamarca'); return false;" alt="Dinamarca" title="Dinamarca">
+        <area shape="poly"
+            coords="226,24,239,17,254,21,270,30,278,48,266,63,257,87,245,106,234,128,220,143,212,126,222,101,224,77,219,57"
+            href="#" onclick="alert('Has pulsado: Noruega'); return false;" alt="Noruega" title="Noruega">
+        <area shape="poly" coords="268,49,282,39,292,49,291,72,284,96,280,122,269,145,258,139,260,115,267,91,269,70"
+            href="#" onclick="alert('Has pulsado: Suecia'); return false;" alt="Suecia" title="Suecia">
+        <area shape="poly"
+            coords="294,29,314,22,333,29,346,45,355,62,350,82,338,95,329,113,316,132,303,119,310,98,311,76,302,59"
+            href="#" onclick="alert('Has pulsado: Finlandia'); return false;" alt="Finlandia" title="Finlandia">
+        <area shape="poly" coords="260,196,282,194,301,203,310,220,302,239,282,246,264,235,253,216" href="#"
+            onclick="alert('Has pulsado: Polonia'); return false;" alt="Polonia" title="Polonia">
+        <area shape="poly" coords="201,232,215,229,225,236,220,245,207,249,199,241" href="#"
+            onclick="alert('Has pulsado: Suiza'); return false;" alt="Suiza" title="Suiza">
+        <area shape="poly" coords="220,242,239,237,253,244,251,256,234,262,220,254" href="#"
+            onclick="alert('Has pulsado: Austria'); return false;" alt="Austria" title="Austria">
+        <area shape="poly" coords="244,224,261,219,271,229,267,242,251,246,240,237" href="#"
+            onclick="alert('Has pulsado: Chequia'); return false;" alt="Chequia" title="Chequia">
+        <area shape="poly" coords="269,239,284,235,294,245,289,255,274,257,265,249" href="#"
+            onclick="alert('Has pulsado: Eslovaquia'); return false;" alt="Eslovaquia" title="Eslovaquia">
+        <area shape="poly" coords="263,256,280,252,293,261,290,274,275,279,262,270" href="#"
+            onclick="alert('Has pulsado: Hungría'); return false;" alt="Hungría" title="Hungría">
+        <area shape="poly"
+            coords="205,248,221,251,230,266,244,280,251,300,265,320,258,339,246,330,240,310,230,292,220,278,210,267"
+            href="#" onclick="alert('Has pulsado: Italia'); return false;" alt="Italia" title="Italia">
+        <area shape="poly" coords="232,263,247,260,257,268,253,278,241,280,231,272" href="#"
+            onclick="alert('Has pulsado: Croacia'); return false;" alt="Croacia" title="Croacia">
+        <area shape="poly" coords="245,278,258,275,267,285,262,296,250,296,242,287" href="#"
+            onclick="alert('Has pulsado: Bosnia y Herzegovina'); return false;" alt="Bosnia y Herzegovina"
+            title="Bosnia y Herzegovina">
+        <area shape="poly" coords="263,281,277,277,287,286,281,300,269,302,262,292" href="#"
+            onclick="alert('Has pulsado: Serbia'); return false;" alt="Serbia" title="Serbia">
+        <area shape="poly" coords="289,255,309,249,328,256,341,269,335,285,318,294,298,286,288,273" href="#"
+            onclick="alert('Has pulsado: Rumanía'); return false;" alt="Rumanía" title="Rumanía">
+        <area shape="poly" coords="301,290,319,285,331,294,325,306,309,310,299,302" href="#"
+            onclick="alert('Has pulsado: Bulgaria'); return false;" alt="Bulgaria" title="Bulgaria">
+        <area shape="poly" coords="298,309,312,305,323,316,326,332,316,346,306,337" href="#"
+            onclick="alert('Has pulsado: Grecia'); return false;" alt="Grecia" title="Grecia">
+        <area shape="poly"
+            coords="310,198,335,190,360,201,385,211,414,224,432,243,418,263,394,271,371,263,350,251,329,243,309,230"
+            href="#" onclick="alert('Has pulsado: Ucrania'); return false;" alt="Ucrania" title="Ucrania">
+        <area shape="poly" coords="326,139,340,130,353,139,359,153,352,166,338,168,327,157" href="#"
+            onclick="alert('Has pulsado: Países bálticos'); return false;" alt="Países bálticos"
+            title="Países bálticos">
+        <area shape="poly"
+            coords="354,90,378,82,407,90,437,105,466,124,496,150,527,176,568,181,568,0,447,0,433,21,415,34,403,55,384,66,367,61,351,46,344,64"
+            href="#" onclick="alert('Has pulsado: Rusia'); return false;" alt="Rusia" title="Rusia">
+        <area shape="poly" coords="375,303,399,300,423,309,442,325,435,342,410,347,388,335,374,321" href="#"
+            onclick="alert('Has pulsado: Turquía'); return false;" alt="Turquía" title="Turquía">
+    </map>
+</body>
+
+</html>
