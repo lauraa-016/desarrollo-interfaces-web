@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 10a - Tablas básicas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 24px;
+            color: #111;
+        }
+
+        h1 { font-size: 1.5; }
+        h2 { margin-top: 32px; font-size: 1.2; }
+        h3 { margin-top: 24px; font-size: 1; }
+
+        table {
+            border-collapse: collapse;
+            margin: 12px 0 24px;
+            width: 520px;
+            max-width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #222;
+            padding: 3px 6px;
+            font-size: 14px;
+        }
+
+        .centrado { text-align: center; }
+        caption { caption-side: top; padding-bottom: 3px; }
+
+        .cabecera-amarilla { background-color: yellow; }
+        .cuerpo-azul { background-color: #78a9dc; }
+        .pie-rojo { background-color: red; }
+
+        /* Ejercicio 2e: colores aplicados por columna con colgroup y col */
+        .colores-columnas { width: 520px; }
+        .col-verde { background-color: #00f000; }
+        .col-claro { background-color: #d7e9e5; }
+        .col-rojo { background-color: #ff1010; }
+
+        /* Ejercicio 3 */
+        .tabla-fusionada {
+            width: 560px;
+            table-layout: fixed;
+        }
+        .tabla-fusionada td {
+            height: 18px;
+            padding: 2px 4px;
+            font-size: 13px;
+        }
+        .gris { background-color: #d7e8e4; }
+        .naranja { background-color: #ff8500; }
+        .verde { background-color: #00f000; }
+        .derecha { text-align: right; }
+    </style>
+</head>
+<body>
+    <h1>Práctica 10a: Tablas básicas</h1>
+
+    <h2>Ejercicio 1</h2>
+    <p>Crea las siguientes tablas usando el formato básico de las tablas.</p>
+
+    <h3>a)</h3>
+    <table>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+        <tr><td>5</td><td>6</td><td>7</td><td>8</td></tr>
+    </table>
+
+    <h3>b)</h3>
+    <table>
+        <tr><td>línea 11</td><td>línea 12</td><td>línea 13</td></tr>
+        <tr><td>línea 21</td><td>línea 22</td><td>línea 23</td></tr>
+        <tr><td>línea 31</td><td>línea 32</td><td>línea 33</td></tr>
+    </table>
+
+    <h2>Ejercicio 2</h2>
+
+    <h3>a) Tabla con cabeceras usando th</h3>
+    <table>
+        <thead>
+            <tr><th>Cabecera1</th><th>Cabecera2</th><th>Cabecera3</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>línea 21</td><td>línea 22</td><td>línea 23</td></tr>
+            <tr><td>línea 31</td><td>línea 32</td><td>línea 33</td></tr>
+        </tbody>
+    </table>
+
+    <h3>b) Tabla con caption</h3>
+    <table>
+        <caption>Tabla de Prueba</caption>
+        <thead>
+            <tr><th>Cabecera1</th><th>Cabecera2</th><th>Cabecera3</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>línea 21</td><td>línea 22</td><td>línea 23</td></tr>
+            <tr><td>línea 31</td><td>línea 32</td><td>línea 33</td></tr>
+        </tbody>
+    </table>
+
+    <h3>c) Tabla con thead, tbody y tfoot con colores</h3>
+    <table>
+        <caption>Tabla de Prueba</caption>
+        <thead class="cabecera-amarilla">
+            <tr><th>Cabecera1</th><th>Cabecera2</th><th>Cabecera3</th></tr>
+        </thead>
+        <tbody class="cuerpo-azul">
+            <tr><td>línea 11</td><td>línea 12</td><td>línea 23</td></tr>
+            <tr><td>línea 21</td><td>línea 22</td><td>línea 33</td></tr>
+            <tr><td>línea 31</td><td>línea 32</td><td>línea 43</td></tr>
+        </tbody>
+        <tfoot class="pie-rojo">
+            <tr><th>Pie 1</th><th>Pie 2</th><th>Pie 3</th></tr>
+        </tfoot>
+    </table>
+
+    <h3>d) Tabla con colgroup y col</h3>
+    <table class="colores-columnas">
+        <colgroup>
+            <col class="col-verde">
+            <col class="col-claro">
+            <col class="col-rojo">
+        </colgroup>
+        <tbody>
+            <tr><td>1</td><td>2</td><td>3</td></tr>
+            <tr><td>4</td><td>5</td><td>6</td></tr>
+            <tr><td>7</td><td>8</td><td>9</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Ejercicio 3: Agrupando filas de una tabla o columnas</h2>
+    <p>Crea una tabla de 4 columnas y 8 filas y replica la tabla. Utiliza tbody para agrupar filas con colores.</p>
+
+    <h3>Tabla 1</h3>
+    <table class="tabla-fusionada">
+        <colgroup>
+            <col style="width:16%">
+            <col style="width:34%">
+            <col style="width:34%">
+            <col style="width:16%">
+        </colgroup>
+        <tbody class="gris">
+            <tr>
+                <td>1</td><td>2</td><td></td><td>3</td>
+            </tr>
+        </tbody>
+        <tbody class="naranja">
+            <tr>
+                <td>4</td>
+                <td colspan="2" rowspan="2" class="centrado">Esta es una celda<br>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td><td>9</td>
+            </tr>
+        </tbody>
+        <tbody class="gris">
+            <tr>
+                <td>10</td><td>11</td><td></td><td>12</td>
+            </tr>
+        </tbody>
+        <tbody class="verde">
+            <tr>
+                <td>4</td>
+                <td colspan="2" rowspan="2" class="derecha">Esta es una celda</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td><td>9</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Tabla 2 (réplica)</h3>
+    <table class="tabla-fusionada">
+        <colgroup>
+            <col style="width:16%">
+            <col style="width:34%">
+            <col style="width:34%">
+            <col style="width:16%">
+        </colgroup>
+        <tbody class="gris">
+            <tr>
+                <td>1</td><td>2</td><td></td><td>3</td>
+            </tr>
+        </tbody>
+        <tbody class="naranja">
+            <tr>
+                <td>4</td>
+                <td colspan="2" rowspan="2" class="centrado">Esta es una celda<br>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td><td>9</td>
+            </tr>
+        </tbody>
+        <tbody class="gris">
+            <tr>
+                <td>10</td><td>11</td><td></td><td>12</td>
+            </tr>
+        </tbody>
+        <tbody class="verde">
+            <tr>
+                <td>4</td>
+                <td colspan="2" rowspan="2" class="derecha">Esta es una celda</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td><td>9</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
