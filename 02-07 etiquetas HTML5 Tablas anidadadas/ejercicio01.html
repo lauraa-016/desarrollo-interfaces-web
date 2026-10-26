@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1 - Fusión de celdas</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio 1. Fusión de celdas</h1>
+
+    <h3>a)</h3>
+    <table border="1" width="600">
+        <tr>
+            <td colspan="2">Esta celda tiene un colspan="2"</td>
+        </tr>
+        <tr>
+            <td>Celda normal</td>
+            <td>Otra celda</td>
+        </tr>
+    </table>
+
+    <h3>b)</h3>
+    <table border="1" width="600">
+        <tr>
+            <td rowspan="2">
+                Esta celda tiene rowspan="2",
+                por eso ocupa dos filas
+            </td>
+            <td>Celda normal</td>
+        </tr>
+        <tr>
+            <td>Otra celda normal</td>
+        </tr>
+    </table>
+
+    <h3>c)</h3>
+    <table border="1" width="400" style="background-color: lightblue;">
+        <tr>
+            <th colspan="3">Tabla combinada</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Línea 1</td>
+            <td>Línea 2</td>
+            <td>Línea 3</td>
+        </tr>
+        <tr>
+            <td colspan="2">Línea 4 combinada</td>
+        </tr>
+    </table>
+
+    <h3>d) Tabla con colores</h3>
+    <table border="1" width="300">
+        <tr>
+            <th colspan="2" style="background-color: yellow;">
+                Tabla de colores
+            </th>
+        </tr>
+        <tr>
+            <td style="background-color: lime;">
+                Línea 1
+            </td>
+            <td style="background-color: yellow;">
+                Línea 2
+            </td>
+        </tr>
+        <tr>
+            <td>Línea 3</td>
+            <td style="background-color: yellow;">
+                Línea 4
+            </td>
+        </tr>
+    </table>
+
+    <h3>e) Tablas con rowspan y colspan</h3>
+
+    <table border="1">
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td rowspan="2">I</td>
+            <td>J</td>
+            <td>K</td>
+            <td rowspan="2">L</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1">
+        <tr>
+            <td>A</td>
+            <td colspan="2">C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td rowspan="2">X</td>
+            <td>J</td>
+            <td>K</td>
+            <td rowspan="2">L</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>J</td>
+            <td>K</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
